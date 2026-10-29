@@ -6,6 +6,23 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ClosetMesh, hava durumuna göre stil önerileri sunabilmek için konumunuzu kullanır."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ClosetMesh, kıyafetlerinizi gardırobunuza eklemek için fotoğraflarınıza erişir.",
+          "cameraPermission": "ClosetMesh, kıyafet fotoğrafı çekmek için kameranızı kullanır.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-status-bar"
+    ],
     "ios": {
       "supportsTablet": true
     },
